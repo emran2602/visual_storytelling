@@ -1,0 +1,113 @@
+/* Reset default margin and padding */
+body, h2, p {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+.rectangle {
+  width: 150px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  background-color: #add8e6; /* Adjust background color as needed */
+  text-align: center;
+  padding: 50px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  z-index: 1000;
+}
+.rectangle:hover {
+  transform: scale(1.05);
+}
+
+.rectangle h2 {
+  margin-bottom: 10px;
+  color: #fff; /* Adjust text color as needed */
+}
+
+.rectangle p {
+  margin: 0;
+  color: #fff; /* Adjust text color as needed */
+}
+
+.rectangle h2 {
+  margin-bottom: 5px;
+}
+
+.rectangle p {
+  margin: 0;
+}
+#intro {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#intro p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+/* Make ice cream cone centered horizontally and vertically */
+#ice-cream-cone {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+/* Style the cone */
+.cone {
+  width: 0;  
+  height: 0;  
+  border-left: 50px solid transparent; 
+  border-right: 50px solid transparent; 
+  border-top: 150px solid wheat; 
+}
+
+
+/* Style the scoops */
+.scoop {
+  width: 50px;
+  height: 50px;
+  background-color: #add8e6; /* Default background color for the scoop */
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* Style each ice cream shop section */
+.ice-cream-shop {
+  height: 100vh; /* Take up the entire viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Style the content within each shop */
+.shop-content {
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
