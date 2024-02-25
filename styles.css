@@ -1,28 +1,42 @@
-/* Reset default margin and padding */
+
 body, h2, p {
   margin: 0;
   padding: 0;
 }
+p{
+  text-align: left;
+  margin-top: 1em;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #faf0e6;
+}
+
 #header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: #faf0e6;
   padding: 20px 0;
+  height: 100%;
 }
 
 .rectangle {
-  width: 150px; 
-  height: 100px; 
-  background-color: #add8e6;
+  width: 300px; 
+  height: 400px; 
+  background-color: #faf0e6;
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding: 50px;
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease; 
-  z-index: 1000;
+  z-index: 1001;
 }
+
 .rectangle:hover {
   transform: scale(1.05);
 }
@@ -30,21 +44,74 @@ body, h2, p {
 .rectangle h2 {
   margin-bottom: 10px;
   color: #fff; 
+  font-family: palatino;
 }
 
-.rectangle p {
+
+#scrolly {
+  position: relative;
+  padding: 1rem;
+
+}
+
+article {
+  position: relative;
+  padding: 0;
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+.sticky-thing {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  width: 100%;
   margin: 0;
-  color: #fff; 
+  z-index: 0;
+  top: 20.5vh;
+  height: 75vh;
+  /* Center everything inside */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
-.rectangle h2 {
-  margin-bottom: 5px;
+/* .sticky-thing p {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #fff;
+} */
+
+.step {
+  margin: 0 auto 2rem auto;
+  /* color: #fff; */
+  background-color: rgba(255, 255, 255, 0.438);
+  border-radius: 10px;
+  z-index: 1;
 }
 
-.rectangle p {
-  margin: 0;
+.step:last-child {
+  margin-bottom: 0;
+  padding-bottom: 850px; 
+  /* z-index: 0; */
 }
-#intro {
+
+
+/* .step.is-active p {
+  background-color: goldenrod;
+  color: #3b3b3b;
+} */
+
+.step p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  font-family: palatino;
+}
+
+/* #intro {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -52,13 +119,18 @@ body, h2, p {
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  z-index: 10001;
 }
 
 #intro p {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
-}
+  font-family: palatino;
+} */
 
 #ice-cream-cone {
   width: 100%;
@@ -97,6 +169,7 @@ body, h2, p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 500px;
 }
 
 .shop-content {
@@ -106,6 +179,8 @@ body, h2, p {
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: palatino;
+  
 }
 
 #conclusion {
@@ -122,4 +197,10 @@ body, h2, p {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
+  font-family: palatino;
 }
+
+.comparison{
+  padding: 50px;
+}
+

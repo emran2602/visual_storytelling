@@ -7,42 +7,70 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="header">
-  <div class="rectangle" style="background-color: aqua;" data-target="shop1">
-    <h2>Swensons</h2>
+<div id="scrolly">
+  <div class="sticky-thing">
+      <div id="header">
+
+          <div class="rectangle" style="background-image: url(Swensen\'s\ \(2\).png);" data-target="shop1">
+          </div>
+          <div class="rectangle" style="background-image: url(Mitchell\'s\ \(1\).png);" data-target="shop2">
+          </div>
+          <div class="rectangle" style="background-image: url(Lush\ Gelato\ \(2\).png);" data-target="shop3">
+          </div>
+      </div>
+    </div>
+
+  <article>
+      <div class="step" data-step="1">
+        <p>
+          In San Francisco, new, hip ice cream shops like Salt & Straw sell cricket-flavored ice cream. Places such as Bi-Rite Creamery have their eyes set on basil and honey lavender flavors.  But a few old-school parlors have been around for decades. What keeps people coming back?
+        </p>
+      </div>
+      <div class="step" data-step="2">
+        <p>
+          Choose one of the ice cream parlors below to read about how they keep the business thriving.    </p>
+    </article>
+      
   </div>
-  <div class="rectangle" style="background-color: blue;" data-target="shop2">
-    <h2>Mitchell's</h2>
-  </div>
-  <div class="rectangle" style="background-color: blueviolet;" data-target="shop3">
-    <h2>Lush Gelato</h2>
-  </div>
-  <div class="rectangle" style="background-color: brown;" data-target="shop4">
-    <h2>Salt and Straw</h2>
-  </div>
-</div>
-<div id="intro">
-<p>
-  Choose one of the ice cream parlors below to read about how they keep the business thriving.Have you ever wondered why you and your grandma have the same favorite ice cream shop? Curious as to why they say they don’t make them like they used to anymore? We’re talking about the good ol’ fashion ice cream parlors here in the bay and how they’re still slinging the best creamy concoctions around. So take some inspiration and learn more of your favorite local parlor along with their rivals that keep the heat on and the business thriving. Go on, choose your starter:
-</p>
-</div>
-<div id="ice-cream-cone">
-  <div class="cone"></div>
+
 </div>
 
+
+</div>
+<!-- <div id="ice-cream-cone">
+  <div class="cone"></div>
+</div> -->
+
 <div class="ice-cream-shop" id="shop1">
+  <div class="comparison">
+    <img-comparison-slider>
+    <img slot="first" src="Lush Gelato (2).png" width="1300" height="600"/>
+    <img slot="second" src="Mitchell's (1).png" width="1300" height="600"/>
+  </img-comparison-slider>
+  </div>
   <div class="shop-content">
     <h2>Swensons</h2>
     <p>Swensen’s has been a big player in the ice cream game since 1948, when it first opened in Russian Hill. San Francisco has gone through many changes since then, but some well-known flavors, like sticky chewy chocolate, have never left the Swensen’s menu. 
-      Although Sticky Chewy Chocolate is decadent and delicious, Israel Lopez, the manager and Cali Jade, a long standing employee, state that Swensen’s “gets a lot of regulars that come in” and “a lot of the regulars are super friendly so a lot of people come many times a week.” 
-      Both Jade and Lopez recall regular customers such as “this one lady gets our caramel turtle fudge on a sugar cone every time” and “one guy who likes to get a pint of ice cream but he gets it in a quart container with vanilla and hot fudge on it and he just eats it with the spoon.” They continue to create their legacy as “people travel to Swensen’s because they’ve had it somewhere else through their childhood and they missed it,” which also explains the number of children and old and young customers. Its willingness to give back to the community they have created also contributes to its legacy. A friend of Swensen’s organizes community cleanups that Swensen’s sponsors to give free ice cream to further better the community in Russian Hill. 
-      Still, Swensen’s is aware that it competes with shops that have less traditional flavors. Many people including food influencer, Nick Chung, agree that having an “enticing factor of a flavor that people are like ‘What is that? Why would I even eat that?’ are what attracts people.” To keep up, Swensen’s created seasonal flavors: black licorice and pumpkin in October and eggnog in December.
       </p>
-    <!-- Add more content here -->
+    <p>
+      Although Sticky Chewy Chocolate is decadent and delicious, Israel Lopez, the manager and Cali Jade, a long standing employee, state that Swensen’s “gets a lot of regulars that come in” and “a lot of the regulars are super friendly so a lot of people come many times a week.” 
+    </p>
+    <p>
+      Both Jade and Lopez recall regular customers such as “this one lady gets our caramel turtle fudge on a sugar cone every time” and “one guy who likes to get a pint of ice cream but he gets it in a quart container with vanilla and hot fudge on it and he just eats it with the spoon.” They continue to create their legacy as “people travel to Swensen’s because they’ve had it somewhere else through their childhood and they missed it,” which also explains the number of children and old and young customers. Its willingness to give back to the community they have created also contributes to its legacy. A friend of Swensen’s organizes community cleanups that Swensen’s sponsors to give free ice cream to further better the community in Russian Hill. 
+    </p>
+    <p>
+      Still, Swensen’s is aware that it competes with shops that have less traditional flavors. Many people including food influencer, Nick Chung, agree that having an “enticing factor of a flavor that people are like ‘What is that? Why would I even eat that?’ are what attracts people.” To keep up, Swensen’s created seasonal flavors: black licorice and pumpkin in October and eggnog in December.
+    </p>
   </div>
 </div>
 
 <div class="ice-cream-shop" id="shop2">
+  <div class="comparison">
+    <img-comparison-slider>
+    <img slot="first" src="Lush Gelato (2).png" width="1300" height="600"/>
+    <img slot="second" src="Mitchell's (1).png" width="1300" height="600"/>
+  </img-comparison-slider>
+  </div>
   <div class="shop-content">
     <h2>Mitchell's</h2>
     <p>It’s tucked in a corner and seemingly easy-to-miss, but chances are, you’ve seen a line wrapped around the street for this treasured landmark. Mitchell’s Ice Cream prides itself on its consistency — according to Jorge Villa, a supervisor at Mitchell’s, the shop has been following the same recipes since opening day. 
@@ -56,6 +84,12 @@
 </div>
 
 <div class="ice-cream-shop" id="shop3">
+  <div class="comparison">
+    <img-comparison-slider>
+    <img slot="first" src="Lush Gelato (2).png" width="1300" height="600"/>
+    <img slot="second" src="Mitchell's (1).png" width="1300" height="600"/>
+  </img-comparison-slider>
+  </div>
   <div class="shop-content">
     <h2>Lush Gelato</h2>
     <p>Lush Gelato is located in the heart of Little Italy. This place prides itself in the gelato it sells, making sure it serves the community with fresh, home-made gelato. It is the first facility to be licensed by the State of California to make gelato from scratch. This means the shopthey pasteurizespasterize itstheir own milk and, make itstheir own mixes, giving them more control over what flavours they choose. Freshness is a big pillar of theirs. Rosario Khalil, (the store manager,) said thatmentions how making their own gelato from scratch ensures that it is not elastic, sticky or icy. Now that is how you know the gelato is fresh. It is made every single day otherwise their prized gelato would not be up to standard. This culture preserves the Italian heritage that cements Lush Gelato within Little Italy. 
@@ -63,7 +97,7 @@
   </div>
 </div>
 
-<div class="ice-cream-shop" id="shop4">
+<div class="ice-cream-shop" id="shop4" style="padding-top: 0px;">
   <div class="shop-content">
     <h2>Salt & Straw</h2>
     <p>When asking Chung about his thoughts about social media trends, he simply stated that “it starts with the restaurant and the influencer’s job is to market that.”</p>
@@ -76,6 +110,11 @@
   </p>
 </div>
 
+<script src="https://unpkg.com/scrollama"></script>
+<script
+  defer
+  src="https://unpkg.com/img-comparison-slider@7/dist/index.js"
+></script>
 <script src="main.js"></script>
 </body>
 </html>
