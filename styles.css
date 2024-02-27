@@ -13,6 +13,37 @@ html, body {
   background-color: #faf0e6;
 }
 
+#title{
+  display: flex;
+}
+.hero {
+  height: 100vh; /* Full height of the viewport */
+  width: 100%; /* Full width of the viewport */
+  background-image: url(hero_image.jpeg);
+  background-size: cover;
+  display: flex; /* Use flexbox to center content vertically and horizontally */
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  color: #333; /* Example text color */
+  font-size: 24px; /* Example font size */
+}
+.hero_title {
+  font-family: 'Londrina Shadow', sans-serif; /* Apply Londrina Shadow font */
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+#hero_secondary{
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+#hero_credit{
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: bold;
+}
+
 #header {
   display: flex;
   justify-content: center;
@@ -24,7 +55,7 @@ html, body {
 
 .rectangle {
   width: 300px; 
-  height: 400px; 
+  height: 450px; 
   background-color: #faf0e6;
   background-size: cover;
   background-position: center;
@@ -57,7 +88,7 @@ html, body {
 article {
   position: relative;
   padding: 0;
-  max-width: 20rem;
+  max-width: 30rem;
   margin: 0 auto;
 }
 
@@ -83,7 +114,7 @@ article {
 } */
 
 .step {
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 10rem auto;
   /* color: #fff; */
   background-color: rgba(255, 255, 255, 0.438);
   border-radius: 10px;
@@ -91,8 +122,8 @@ article {
 }
 
 .step:last-child {
-  margin-bottom: 0;
-  padding-bottom: 850px; 
+  margin-bottom: 100rem;
+  padding-bottom: 50px; 
   /* z-index: 0; */
 }
 
@@ -110,27 +141,6 @@ article {
   color: #333;
   font-family: palatino;
 }
-
-/* #intro {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  margin-top: 40px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 50%;
-  width: 40%;
-  z-index: 10001;
-}
-
-#intro p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  font-family: palatino;
-} */
 
 #ice-cream-cone {
   width: 100%;
@@ -158,10 +168,12 @@ article {
 .scoop {
   width: 50px;
   height: 50px;
+  background-image: url(brown_scoop.png);
   background-color: #add8e6; 
   border-radius: 50%;
   position: absolute;
 }
+
 
 .ice-cream-shop {
   height: 100vh; 
@@ -175,7 +187,9 @@ article {
 .shop-content {
   max-width: 600px;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -200,7 +214,4 @@ article {
   font-family: palatino;
 }
 
-.comparison{
-  padding: 50px;
-}
 
