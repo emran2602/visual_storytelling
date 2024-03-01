@@ -90,6 +90,7 @@ article {
   padding: 0;
   max-width: 30rem;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .sticky-thing {
@@ -105,6 +106,23 @@ article {
   /* display: flex;
   align-items: center;
   justify-content: center; */
+}
+
+#mitchells {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 0;
+  top: 20.5vh;
+  height: 75vh;
+}
+
+.mitchells-background {
+  margin-bottom: 10px;
+  width: 1250px;
+  height: 500px;
 }
 
 /* .sticky-thing p {
@@ -126,7 +144,6 @@ article {
   padding-bottom: 50px; 
   /* z-index: 0; */
 }
-
 
 /* .step.is-active p {
   background-color: goldenrod;
