@@ -57,9 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
         const targetRect = targetElement.getBoundingClientRect();
-        console.log("yoyoyoyo")
-        console.log(targetRect.top)
-        const offset = targetRect.top + (targetRect.height / 2) - (window.innerHeight / 2) + window.scrollY;
+        const offset = targetRect.top  - (window.innerHeight / 2) + window.scrollY;
         window.scrollTo({
           top: offset,
           behavior: 'smooth'
@@ -68,3 +66,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+

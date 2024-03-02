@@ -1,12 +1,4 @@
 
-body, h2, p {
-  margin: 0;
-  padding: 0;
-}
-p{
-  text-align: left;
-  margin-top: 1em;
-}
 html, body {
   height: 100%;
   margin: 0;
@@ -16,32 +8,42 @@ html, body {
 #title{
   display: flex;
 }
+#hero{
+  background-image: url(./images/hero_image.jpeg);
+  background-position: center top;
+  height: 150vh;
+}
 .hero {
-  height: 100vh; /* Full height of the viewport */
-  width: 100%; /* Full width of the viewport */
-  background-image: url(hero_image.jpeg);
-  background-size: cover;
-  display: flex; /* Use flexbox to center content vertically and horizontally */
-  flex-direction: column; /* Arrange items in a column */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  color: #333; /* Example text color */
-  font-size: 24px; /* Example font size */
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  color: #333; 
+  font-size: 24px; 
 }
 .hero_title {
-  font-family: 'Londrina Shadow', sans-serif; /* Apply Londrina Shadow font */
+  font-family: 'Londrina Shadow', sans-serif;
   font-size: 100px;
   font-weight: bold;
   letter-spacing: 10px;
+}
+.hero_title p{
+  text-align: center;
 }
 #hero_secondary{
   font-family: "Nanum Myeongjo", serif;
   font-weight: bold;
   letter-spacing: 5px;
 }
+#hero_secondary{
+  text-align: center;
+}
 #hero_credit{
   font-family: "Nanum Myeongjo", serif;
   font-weight: bold;
+}
+#hero_credit p{
+  text-align: center;
 }
 
 #header {
@@ -49,7 +51,6 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: #faf0e6;
-  padding: 20px 0;
   height: 100%;
 }
 
@@ -82,7 +83,6 @@ html, body {
 #scrolly {
   position: relative;
   padding: 1rem;
-
 }
 
 article {
@@ -100,12 +100,8 @@ article {
   width: 100%;
   margin: 0;
   z-index: 0;
-  top: 20.5vh;
-  height: 75vh;
-  /* Center everything inside */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  top: 10vh;
+  height: 100vh;
 }
 
 #mitchells {
@@ -120,20 +116,16 @@ article {
 }
 
 .mitchells-background {
-  margin-bottom: 10px;
-  width: 1250px;
-  height: 500px;
+  width: 100%; 
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
 
-/* .sticky-thing p {
-  font-size: 8rem;
-  font-weight: 900;
-  color: #fff;
-} */
 
 .step {
   margin: 0 auto 10rem auto;
-  /* color: #fff; */
   background-color: rgba(255, 255, 255, 0.438);
   border-radius: 10px;
   z-index: 1;
@@ -141,14 +133,7 @@ article {
 
 .step:last-child {
   margin-bottom: 100rem;
-  padding-bottom: 50px; 
-  /* z-index: 0; */
 }
-
-/* .step.is-active p {
-  background-color: goldenrod;
-  color: #3b3b3b;
-} */
 
 .step p {
   text-align: center;
@@ -159,76 +144,280 @@ article {
   font-family: palatino;
 }
 
-#ice-cream-cone {
+.parallax-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.background-image {
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999; 
-}
-
-
-.cone {
-  width: 0;  
-  height: 0;  
-  border-left: 50px solid transparent; 
-  border-right: 50px solid transparent; 
-  border-top: 150px solid wheat; 
+  background-size: cover;
+  background-position: center;
 }
 
 
 
-.scoop {
-  width: 50px;
-  height: 50px;
-  background-image: url(brown_scoop.png);
-  background-color: #add8e6; 
-  border-radius: 50%;
+/* /* parallax part  */
+.scroll-div{
   position: absolute;
+  margin-top: 100vh;
+}
+
+.parallax-images {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 0;
 }
 
 
-.ice-cream-shop {
-  height: 100vh; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 500px;
+/* Swensens styling */
+
+
+#swensens_parallax {
+  background-image: url(./images/swenson_img1.jpg);
+  background-position: center top;
+  height: 515vh;
+}
+.swensens-textbox {
+  background-color: #353333;
+  color: white; 
+  padding: 60px;
+  border-radius: 10px; 
+  width: 80%; 
+  margin: 0 auto; 
+  margin-bottom: 10px;
 }
 
-.shop-content {
-  max-width: 600px;
+.swensens-textbox p {
+  margin: 15px 0; 
+  font-family: Arial, sans-serif;
+  font-size: 16px; 
+  line-height: 1.6; 
   text-align: center;
-  padding: 50px;
-  padding-left: 70px;
-  padding-right: 70px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: palatino;
+}
+
+#swensens-contentimg{
+  margin-left: 50%;
+  margin-bottom: 400px;
+}
+#swensens-contentimg img {
+  width: 80%; 
+}
+
+#swensens-quote {
+  background-color: #762F20;
+  text-align: center; 
+  padding: 30px;
+  margin: 0 auto; 
+  width: 60%; 
+  border-radius: 5px; 
+  margin-bottom: 400px;
+}
+
+#swensens-quote p {
+  color: white;
+  font-size: 18px; 
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+
+
+/* mitchells styling */
+
+
+.mitchells-p{
+  color: white;
+  margin-left: 20px; 
+  margin-right: 20px; 
+  margin-bottom: 200px;
+}
+.mitchells-p p{
+  text-align: center;
+}
+.mitchells-b-images {
+  display: flex; 
+  justify-content: center; 
+  margin-bottom: 100px;
+}
+
+.mitchells-b-images img {
+  margin: 0 85px; 
+  border: 3px solid white; 
+  border-radius: 5px; 
+  max-width: 300px;
+  height: auto; 
+}
+
+#mitchells-quote {
+  background-color: #ffd700;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 30px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 200px;
+}
+
+#mitchells-quote p {
+  color: black;
+  font-size: 18px; 
+  font-style: italic; 
+  line-height: 1.4; 
+  margin: 0; 
+  text-align: center;
+}
+
+#mitchells_parallax {
+  background-image: url(./images/mitchells-background.jpg);
+  background-position: center top;
+  height: 515vh;
+}
+
+.scroll-mitchells-div{
+  position: absolute;
+  margin-top: 100vh;
+}
+
+/* lush styling */
+
+
+
+#lush_parallax {
+  background-image: url(./images/lushstore.png);
+  background-position: center top;
+  height: 515vh;
+}
+.lush-textbox {
+  background-color: #353333;
+  color: white;
+  padding: 60px; 
+  border-radius: 10px; 
+  width: calc(33.33% - 60px);  margin: 0 auto; 
+  margin-bottom: 10px;
+  right: 0;
+  margin-top: 60px; 
+  margin-right: 60px;
+}
+
+.lush-textbox p {
+  margin: 15px 0;
+  font-family: Arial, sans-serif; 
+  font-size: 16px; 
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* adjusting for mobile */
+@media (max-width: 700px) {
+
+  .hero_title {
+    margin-top: 10vh;
+    font-size: 20px; 
+    letter-spacing: 5px;
+  }
+  #hero_secondary{
+    font-size: 15px;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    padding: 10px;
+  }
+  #hero_credit{
+    font-size: 15px;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    padding: 10px;
+  }
+  .rectangle {
+    width: 90%; 
+    height: 100vh; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2px; 
+    margin: 10px 10px; 
+    border-radius: 0;
+    box-shadow: none; 
+  }
+  .sticky-thing {
+    top: 5vh;
+    height: auto; 
+  }
+  .step {
+    margin: 0 auto 2rem auto;
+  }
+  .step p {
+    padding: 0.5rem;
+    font-size: 10px;
+    line-height: 1.5em;
+  }
+  .step:last-child {
+    margin-bottom: 50rem;
+  }
+
+  .swensens-textbox{
+    width: 50%;
+    padding: 20px;
+  }
+  .swensens-textbox p {
+    font-size: 10px;
+  }
+  #swensons-quote{
+    margin-bottom: 20px;
+  }
+  #swensens-contentimg{
+    margin-left: 50%;
+    margin-bottom: 50px;
+  }
+
+  #mitchells_parallax{
+    background-size: auto 100%;;
+  }
+  .mitchells-p{
+    margin-bottom: 30px;
+  }
+  .mitchells-p p{
+    font-size: 10px;
+  }
+  .mitchells-b-images {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .mitchells-b-images img {
+    margin: 10px 0; 
+  }
+  #mitchells-quote{
+    padding: 5px;
+  }
+  #mitchells-quote p {
+    font-size: 12px;
+  }
+  .lush-textbox {
+    padding: 10px; 
+    width: 50%;
+  }
+  .lush-textbox p {
+    font-size: 10px; 
+  }
+
+
+
   
 }
 
-#conclusion {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  margin-bottom: 40px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-#conclusion p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  font-family: palatino;
-}
+
+
+
+
+
 
 
