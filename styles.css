@@ -348,13 +348,17 @@ article {
     margin-bottom: 0;
     padding: 10px;
   }
+  #header{
+    width: 100vw;
+    flex-direction: column;
+  }
   .rectangle {
     width: 90%; 
     height: 100vh; 
     background-size: contain;
     background-repeat: no-repeat;
     padding: 2px; 
-    margin: 10px 10px; 
+    margin: 10px 0px; 
     border-radius: 0;
     box-shadow: none; 
   }
