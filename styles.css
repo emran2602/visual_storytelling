@@ -320,6 +320,7 @@ article {
   #hero{
     max-height: 100vh;
     background-size: contain;
+    height: 100vh;
   }
   .hero_title {
     margin-top: 10vh;
