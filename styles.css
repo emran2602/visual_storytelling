@@ -315,7 +315,12 @@ article {
 
 /* adjusting for mobile */
 @media (max-width: 700px) {
+  
 
+  #hero{
+    max-height: 100vh;
+    background-size: contain;
+  }
   .hero_title {
     margin-top: 10vh;
     font-size: 20px; 
@@ -346,6 +351,9 @@ article {
   .sticky-thing {
     top: 5vh;
     height: auto; 
+  }
+  article {
+    z-index: 1000; 
   }
   .step {
     margin: 0 auto 2rem auto;
