@@ -1,8 +1,10 @@
-
 html, body {
   height: 100%;
   margin: 0;
   background-color: #faf0e6;
+}
+p{
+    font-family: "Nanum Myeongjo", serif;
 }
 
 #title{
@@ -22,13 +24,14 @@ html, body {
   font-size: 24px; 
 }
 .hero_title {
-  font-family: 'Londrina Shadow', sans-serif;
   font-size: 100px;
   font-weight: bold;
   letter-spacing: 10px;
 }
 .hero_title p{
   text-align: center;
+  font-family: 'Londrina Shadow', sans-serif;
+
 }
 #hero_secondary{
   font-family: "Nanum Myeongjo", serif;
@@ -73,11 +76,7 @@ html, body {
   transform: scale(1.05);
 }
 
-.rectangle h2 {
-  margin-bottom: 10px;
-  color: #fff; 
-  font-family: palatino;
-}
+
 
 
 #scrolly {
@@ -196,7 +195,6 @@ article {
 
 .swensens-textbox p {
   margin: 15px 0; 
-  font-family: Arial, sans-serif;
   font-size: 16px; 
   line-height: 1.6; 
   text-align: center;
@@ -310,7 +308,6 @@ article {
 
 .lush-textbox p {
   margin: 15px 0;
-  font-family: Arial, sans-serif; 
   font-size: 16px; 
   line-height: 1.6;
   text-align: left;
