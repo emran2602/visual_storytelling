@@ -316,16 +316,14 @@ article {
 /* adjusting for mobile */
 @media (max-width: 700px) {
   
-  .parallax-images {
-    background-size: contain;
-  }
+
   #hero{
     max-height: 100vh;
     background-size: contain;
     height: 100vh;
   }
   .hero_title {
-    margin-top: 10vh;
+    margin-top: 5vh;
     font-size: 20px; 
     letter-spacing: 5px;
   }
@@ -352,8 +350,9 @@ article {
     box-shadow: none; 
   }
   .sticky-thing {
-    top: 5vh;
-    height: auto; 
+    position: static;
+    top: auto;
+    height: auto;
   }
   article {
     z-index: 1000; 
@@ -371,6 +370,10 @@ article {
     margin-bottom: 50rem;
   }
 
+  #swensens_parallax{
+    background-color: #5f6d72;
+    background-image: none;
+  }
   .swensens-textbox{
     width: 50%;
     padding: 20px;
@@ -416,6 +419,12 @@ article {
   .lush-textbox p {
     font-size: 10px; 
   }
+
+  #lush_parallax{
+    background-color: #af9c78;
+    background-image: none;
+  }
+
 
 
 
