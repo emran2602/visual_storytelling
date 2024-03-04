@@ -6,6 +6,9 @@ html, body {
 p{
     font-family: "Nanum Myeongjo", serif;
 }
+.mobile_only {
+  display: none;
+}
 
 #title{
   display: flex;
@@ -316,7 +319,12 @@ article {
 /* adjusting for mobile */
 @media (max-width: 700px) {
   
-
+  .mobile_only{
+    display: block;
+  }
+  #website_only{
+    display: none;
+  }
   #hero{
     max-height: 100vh;
     background-size: contain;
@@ -358,8 +366,9 @@ article {
     z-index: 1000; 
   }
   .step {
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 0.1rem auto;
     z-index: 100000000;
+    margin-bottom: 20vh;
   }
   .step p {
     padding: 0.5rem;
@@ -381,11 +390,15 @@ article {
   .swensens-textbox p {
     font-size: 10px;
   }
-  #swensons-quote{
-    margin-bottom: 30px;
+  #swensens-quote{
+    margin-bottom: 10px;
   }
-  #swensens-contentimg{
-    margin-left: 50%;
+  #swensens-contentimg {
+    margin-left: auto; 
+    margin-right: auto;
+    display: block;
+    max-width: 80%; 
+    height: auto; 
     margin-bottom: 30px;
   }
 
