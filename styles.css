@@ -354,12 +354,12 @@ article {
   }
   .rectangle {
     width: 70vw; 
-    height: 100vh; 
+    height: 30vh; 
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 2px; 
-    margin: 0px 0px; 
-    border-radius: 0;
+    padding: 5px; 
+    margin: 10px 10px; 
+    border-radius: 0px;
     box-shadow: none; 
   }
   .sticky-thing {
@@ -444,8 +444,6 @@ article {
     background-image: none;
     height: 250vh;
   }
-
-
 
 
   
