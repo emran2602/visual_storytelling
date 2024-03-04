@@ -316,7 +316,9 @@ article {
 /* adjusting for mobile */
 @media (max-width: 700px) {
   
-
+  .parallax-images {
+    background-size: contain;
+  }
   #hero{
     max-height: 100vh;
     background-size: contain;
@@ -358,6 +360,7 @@ article {
   }
   .step {
     margin: 0 auto 2rem auto;
+    z-index: 100000000;
   }
   .step p {
     padding: 0.5rem;
@@ -376,11 +379,11 @@ article {
     font-size: 10px;
   }
   #swensons-quote{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   #swensens-contentimg{
     margin-left: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   #mitchells_parallax{
